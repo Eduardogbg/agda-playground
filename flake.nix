@@ -13,6 +13,8 @@
       devShells.default = pkgs.mkShell {
 	  nativeBuildInputs = [
 	    pkgs.emacs
+	    pkgs.ghc
+	    pkgs.stack
 	    (pkgs.agda.withPackages (p: [ p.standard-library ]))
 	  ];
       };
